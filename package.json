@@ -1,0 +1,32 @@
+{
+  "name": "various",
+  "version": "1.0.0",
+  "description": "burger app hw12",
+  "main": "index.js",
+  "scripts": {
+    "test": "console.log(\"hi\");"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randallishino/eat-da-burger.git"
+  },
+  "keywords": [
+    "handlebars",
+    "express",
+    "bodyparser",
+    "mysql"
+  ],
+  "author": "randall ishino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/randallishino/eat-da-burger/issues"
+  },
+  "homepage": "https://github.com/randallishino/eat-da-burger#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.10",
+    "mysql": "^2.15.0"
+  }
+}
