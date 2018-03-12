@@ -23,12 +23,16 @@ function convertSql(obj) {
 }
 
 var orm = {
+
+    // finding all burgers
     selectAll: function(input,callback) { 
         var query = "SELECT * FROM" + input + ";";
         connection.query(query, function(error,result) {
             callback(result);
         });
 },
+
+    // creating a new burger
     insertOne: function(table,cols,vals,callback) {
         var query = 'INSERT INTO ' + table + ' (' + cols.toString() +') ' + 'VALUES (' + questionMark(vals.length) + ') ';
 
@@ -37,6 +41,7 @@ var orm = {
         });
     },
 
+    // updating an burger
     updateOne: function(table,columnVals,selectWhere,callback) {
         var query = 'UPDATE ' + table + ' SET ' + convertSql(columnVals) + ' WHERE ' +  selectWhere;
         connection.query(query,function(error,result) {
