@@ -49,3 +49,7 @@ var orm = {
         });
     }
 };
+
+
+// exporting orm function for use
+module.exports = orm;
